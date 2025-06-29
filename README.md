@@ -41,6 +41,7 @@ Direct link (if available):
 
 6. Google will generate a **16-digit code** — this is your `app_password`.
 ---
+Also in array 'allowed_extensions' you can add extensions you want(.jpeg, .jpg, .pdf, .txt, .docs...)
 
 \`\`\`bash
 python tr.py
