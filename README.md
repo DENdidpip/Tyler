@@ -8,8 +8,7 @@ Make sure you have Python 3.7+ installed and `pip`.
 
 \`\`\`bash
 git clone https://github.com/DENdidpip/Tyler
-\`\`\`
-\`\`\`
+
 cd Tyler
 \`\`\`
 ## 🚀 Setup
