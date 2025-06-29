@@ -50,6 +50,7 @@ python tr.py
 
 \`\`\`bash
 pip install pyinstaller
+
 pyinstaller --noconsole -F tr.py
 \`\`\`
 
@@ -57,6 +58,7 @@ or worse choice
 
 \`\`\`bash
 pip install pyinstaller
+
 pyinstaller -F tr.py
 \`\`\`
 
