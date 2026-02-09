@@ -45,25 +45,25 @@ Direct link (if available):
 ---
 Also in array 'allowed_extensions' you can add extensions you want(.jpeg, .jpg, .pdf, .txt, .docs...)
 
-\`\`\`bash
+```bash
 python tr.py
-\`\`\`
+```
 
 ## 🧩 Build to .exe (for stealth when running the file, the console will not be displayed)
 
-\`\`\`bash
+```bash
 pip install pyinstaller
 
 pyinstaller --noconsole -F tr.py
-\`\`\`
+```
 
 or worse choice
 
-\`\`\`bash
+```bash
 pip install pyinstaller
 
 pyinstaller -F tr.py
-\`\`\`
+```
 
 After that, the .exe will appear in the dist/ folder, which you can send to your friend:)
 
