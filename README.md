@@ -8,11 +8,11 @@ It will not work on Linux or MacOS
 
 Make sure you have Python 3.7+ installed and `pip`.
 
-\`\`\`bash
+```bash
 git clone https://github.com/DENdidpip/Tyler
 
 cd Tyler
-\`\`\`
+```
 ## 🚀 Setup
 
 To launch the main script, you must go to the file "tr.py" and fill in all the information there(it's at the comment "const"). There is nothing complicated there, except for the line email_password
