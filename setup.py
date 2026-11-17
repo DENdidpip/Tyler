@@ -1,7 +1,11 @@
 from tkinter import *
 import tkinter
 import os
+import ctypes
 
+ctypes.windll.user32.ShowWindow(
+    ctypes.windll.kernel32.GetConsoleWindow(), 0
+)
 root = Tk()
 root.title("Set_up_tr")
 root.geometry("350x300")
@@ -37,9 +41,11 @@ def toggle_other():
     if other_var.get():
         other_label.grid(row=9, column=0, sticky=W, pady=5)
         other_entry.grid(row=9, column=1, pady=5)
+        root.geometry("350x350")
     else:
         other_label.grid_remove()
         other_entry.grid_remove()
+        root.geometry("350x300")
 
 Checkbutton(root, text='Other', variable=other_var, command=toggle_other).grid(row=8, column=0, sticky=W)
 other_label = Label(root, text="Enter other extensions:")
